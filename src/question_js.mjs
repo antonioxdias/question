@@ -5,6 +5,12 @@ const readlineInterface = readline.createInterface({
   output: process.stdout
 })
 
-export async function question(prompt, cb) {
+/**
+ * Prompt user with question and return answer
+ *
+ * @param {string} prompt
+ * @returns {string}
+ * */
+export function question(prompt, cb) {
   readlineInterface.question(prompt, cb)
 }
