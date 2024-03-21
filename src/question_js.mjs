@@ -6,9 +6,10 @@ const readlineInterface = readline.createInterface({
 })
 
 /**
- * Prompt user with question and return answer
+ * Prompt user with question and return answer in callback
  *
  * @param {string} prompt
+ * @param {function(string):void} cb
  * @returns {string}
  * */
 export function question(prompt, cb) {

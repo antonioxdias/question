@@ -3,8 +3,9 @@ import gleam/io
 /// Writes prompt output. A callback is invoked with the user's input string
 /// ## Example
 /// ```gleam
-/// use answer <- question("The original prompt engineering?\n")
-/// io.println("Answer: " <> answer)
+///  question("The original prompt engineering?\n", fn (answer) {
+///    io.println("Answer: " <> answer)
+///  }) 
 /// ```
 ///
 @external(erlang, "question_erl", "question")
@@ -12,9 +13,10 @@ import gleam/io
 pub fn question(prompt: String, cb: fn(String) -> Nil) -> Nil
 
 fn ask() {
-  use answer <- question("The original prompt engineering?\n") 
-  io.println("Answer: " <> answer)
-  ask()
+  question("The original prompt engineering?\n", fn (answer) {
+    io.println("Answer: " <> answer)
+    ask()
+  })
 }
 
 pub fn main() {
