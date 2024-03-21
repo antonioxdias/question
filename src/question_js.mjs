@@ -10,7 +10,6 @@ const readlineInterface = readline.createInterface({
  *
  * @param {string} prompt
  * @param {function(string):void} cb
- * @returns {string}
  * */
 export function question(prompt, cb) {
   readlineInterface.question(prompt, cb)
