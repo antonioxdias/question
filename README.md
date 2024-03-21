@@ -3,7 +3,7 @@
 [![Package Version](https://img.shields.io/hexpm/v/question)](https://hex.pm/packages/question)
 [![Hex Docs](https://img.shields.io/badge/hex-docs-ffaff3)](https://hexdocs.pm/question/)
 
-Simple wrapper function that prints a prompt to stdout, waits and returns the user answer in a callback. Provides bindings for erlang and javascript.
+Simple wrapper function to grab user input in a CLI tool. It prints a prompt to stdout, waits and returns the user answer in a callback. Provides bindings for erlang and javascript.
 
 ## Installation
 
