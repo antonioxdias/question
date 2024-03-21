@@ -10,7 +10,7 @@ import gleam/io
 ///
 @external(erlang, "question_erl", "question")
 @external(javascript, "./question_js.mjs", "question")
-pub fn question(prompt: String, cb: fn(String) -> Nil) -> Nil
+pub fn question(prompt: String, cb: fn(String) -> anything) -> Nil
 
 fn ask() {
   question("The original prompt engineering?\n", fn (answer) {
