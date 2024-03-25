@@ -1,7 +1,7 @@
 name = "question"
-version = "1.0.0"
+version = "1.0.1"
 
-description = "Prompt user with question and return answer in callback"
+description = "Simple wrapper function to grab user input. For CLI tools"
 licences = ["Apache-2.0"]
 repository = { type = "github", user = "antonioxdias", repo = "question" }
 links = [{ title = "Website", href = "https://gleam.run" }]

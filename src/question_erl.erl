@@ -6,8 +6,6 @@
 question(Prompt, Cb) ->
   Answer = io:get_line(Prompt),
   case Answer of
-    eof ->
-      init:stop();
-    _ ->
-      Cb(string:trim(Answer))
+    eof -> ok;
+    _ -> Cb(string:trim(Answer))
   end.
